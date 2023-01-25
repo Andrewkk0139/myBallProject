@@ -10,7 +10,7 @@ public class Main
         JFrame myFrame = new JFrame();
         myFrame.setSize(500,500);
         //DrawPanel myPanel = new DrawPanel();
-        BallPanel bPanel = new BallPanel();
+        BallPanel2 bPanel = new BallPanel2();
         //BallPanel2 b2Panel = new BallPanel2();
 
 
