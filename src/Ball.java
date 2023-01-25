@@ -6,21 +6,23 @@ public class Ball
 
 
 
-    public Ball(int x,int y, int size)
+    public Ball(int x, int y, int size, int xSpeed, int ySpeed)
     {
         this.x = x;
         this.y = y;
         this.size = size;
-        xSpeed = 3;
-        ySpeed = 3;
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
     }
     public Ball()
     {
       x = (int)(Math.random() * 400) + 1;
       y = (int)(Math.random() * 400) + 1;
       size = (int)(Math.random() * 20) + 5;
-      xSpeed = (int)(Math.random() * 25) + 1;
-      ySpeed = (int)(Math.random() * 25) + 1;
+      xSpeed = 3;
+      // xSpeed = (int)(Math.random() * 25) + 1;
+      ySpeed = 3;
+      // ySpeed = (int)(Math.random() * 25) + 1;
 
 
     }
@@ -28,15 +30,15 @@ public class Ball
     {
         g.fillOval(x,y,size,size);
     }
-    public void moveBall()
+    public void moveBall(int frameWidth, int frameHeight)
     {
         x+=xSpeed;
         y+=ySpeed;
-        if(x >= 500 || x<= 0)
+        if(x >= frameWidth || x<= 0)
         {
             xSpeed*=-1;
         }
-        if(y>=500 || y<=0)
+        if(y>=frameHeight || y<=0)
         {
             ySpeed*=-1;
         }

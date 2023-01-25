@@ -3,14 +3,10 @@ import java.awt.*;
 import java.util.*;
 public class BallPanel2 extends JPanel
 {
-    boolean plzWork = true;
     ArrayList<Ball> ballList = new ArrayList<Ball>();
 
 
     // add each ball into an arrayList
-
-    Ball b1 = new Ball();
-    Ball b2 = new Ball();
     int i = 0;
 
     public BallPanel2()
@@ -30,7 +26,7 @@ public class BallPanel2 extends JPanel
 
         for(int i = 0;i<ballList.size();i++){
             ballList.get(i).drawBall(g);
-            ballList.get(i).moveBall();
+            ballList.get(i).moveBall(getWidth(),getHeight());
         }
 
         try{ //catch any exception
