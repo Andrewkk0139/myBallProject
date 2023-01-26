@@ -3,6 +3,8 @@ import java.awt.*;
 public class Ball
 {
     private int x,y,size,xSpeed,ySpeed;
+    private ArrayList<Color> colorList= {Color.RED,Color.BLUE,Color.GREEN};
+
 
 
 
@@ -19,10 +21,8 @@ public class Ball
       x = (int)(Math.random() * 400) + 1;
       y = (int)(Math.random() * 400) + 1;
       size = (int)(Math.random() * 20) + 5;
-      xSpeed = 3;
-      // xSpeed = (int)(Math.random() * 25) + 1;
-      ySpeed = 3;
-      // ySpeed = (int)(Math.random() * 25) + 1;
+      xSpeed = (int)(Math.random() * 10) + 1;
+      ySpeed = (int)(Math.random() * 10) + 1;
 
 
     }

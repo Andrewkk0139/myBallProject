@@ -21,6 +21,7 @@ public class BallPanel2 extends JPanel
 
         for( i = i;i<20;i++){
             ballList.add(new Ball());
+            System.out.println("ball count: " + i);
 
         }
 
