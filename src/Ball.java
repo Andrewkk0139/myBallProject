@@ -3,7 +3,11 @@ import java.awt.*;
 public class Ball
 {
     private int x,y,size,xSpeed,ySpeed;
-    private ArrayList<Color> colorList= {Color.RED,Color.BLUE,Color.GREEN};
+    private Color one = new Color(255,0,0);
+    private Color two = new Color(0,255,0);
+    private Color three = new Color(0,0,255);
+
+
 
 
 
@@ -28,7 +32,18 @@ public class Ball
     }
     public void drawBall(Graphics g)
     {
-        g.fillOval(x,y,size,size);
+        int cdlrPicker = (int)(Math.random() * 2) + 1;
+        switch(cdlrPicker){
+            case 1:
+                g.setColor(one);
+                g.fillOval(x,y,size,size);
+            case 2:
+                g.setColor(two);
+                g.fillOval(x,y,size,size);
+            case 3:
+                g.setColor(two);
+                g.fillOval(x,y,size,size);
+        }
     }
     public void moveBall(int frameWidth, int frameHeight)
     {
