@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="090bf906-211a-479f-b0f0-2251b5a4402f" name="Changes" comment="trying to make differnt ball colors. ball class, line 6.">
+    <list default="true" id="090bf906-211a-479f-b0f0-2251b5a4402f" name="Changes" comment="makes colors only case 3?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BallPanel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BallPanel2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674748230052</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="makes colors only case 3?">
+      <created>1674834623736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674834623736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +108,7 @@
     <MESSAGE value="new comment on line 8" />
     <MESSAGE value="MADE BALLS MOVE!" />
     <MESSAGE value="trying to make differnt ball colors. ball class, line 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to make differnt ball colors. ball class, line 6." />
+    <MESSAGE value="makes colors only case 3?" />
+    <option name="LAST_COMMIT_MESSAGE" value="makes colors only case 3?" />
   </component>
 </project>

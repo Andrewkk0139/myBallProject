@@ -3,13 +3,7 @@ import java.awt.*;
 public class Ball
 {
     private int x,y,size,xSpeed,ySpeed;
-    private Color one = new Color(255,0,0);
-    private Color two = new Color(0,255,0);
-    private Color three = new Color(0,0,255);
-
-
-
-
+    private Color ballColor;
 
 
     public Ball(int x, int y, int size, int xSpeed, int ySpeed)
@@ -19,6 +13,7 @@ public class Ball
         this.size = size;
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
+        ballColor = new Color((int)(Math.random() * 0x1000000));
     }
     public Ball()
     {
@@ -27,23 +22,17 @@ public class Ball
       size = (int)(Math.random() * 20) + 5;
       xSpeed = (int)(Math.random() * 10) + 1;
       ySpeed = (int)(Math.random() * 10) + 1;
+      ballColor = new Color((int)(Math.random() * 0x1000000));
 
 
     }
+
+
+
     public void drawBall(Graphics g)
     {
-        int cdlrPicker = (int)(Math.random() * 2) + 1;
-        switch(cdlrPicker){
-            case 1:
-                g.setColor(one);
-                g.fillOval(x,y,size,size);
-            case 2:
-                g.setColor(two);
-                g.fillOval(x,y,size,size);
-            case 3:
-                g.setColor(two);
-                g.fillOval(x,y,size,size);
-        }
+        g.setColor(ballColor);
+        g.fillOval(x,y,size,size);
     }
     public void moveBall(int frameWidth, int frameHeight)
     {
@@ -52,10 +41,12 @@ public class Ball
         if(x >= frameWidth || x<= 0)
         {
             xSpeed*=-1;
+            ySpeed=(int)(Math.random() * 10) - 5;
         }
         if(y>=frameHeight || y<=0)
         {
             ySpeed*=-1;
+            xSpeed=(int)(Math.random() * 10) - 5;
         }
 
     }

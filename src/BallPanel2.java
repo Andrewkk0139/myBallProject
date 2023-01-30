@@ -11,7 +11,7 @@ public class BallPanel2 extends JPanel
 
     public BallPanel2()
     {
-        setBackground(Color.RED);
+        setBackground(new Color((int)(Math.random() * 0x1000000)));
     }
 
     @Override
@@ -22,7 +22,6 @@ public class BallPanel2 extends JPanel
         for( i = i;i<20;i++){
             ballList.add(new Ball());
             System.out.println("ball count: " + i);
-
         }
 
         for(int i = 0;i<ballList.size();i++){
